@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Anees</title>
+    
+</head>
+<body>
+
+<!-- -------------------------------Navbar------------------------------------------->
+    <section id="Nav">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container">
+              <a class="navbar-brand" href="./index.html">Anees</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-4">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <div class="social-links ms-auto">
+                    <a href="https://in.linkedin.com/in/anees17/">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 128 128" id="linkedin" height = "35px" width = "35px"><circle cx="64" cy="64" r="64" fill="#0177b5"></circle><path fill="#fff" d="M92 32H36a4 4 0 0 0-4 4v56a4 4 0 0 0 4 4h56a4 4 0 0 0 4-4V36a4 4 0 0 0-4-4ZM52 86H42V56h10Zm-5-34a6 6 0 1 1 6-6 6 6 0 0 1-6 6Zm39 34H76V66c0-1.66-2.24-3-5-3-4 0-5 5.34-5 7v16H56V56h10v7c0-5 4.48-7 10-7a10 10 0 0 1 10 10Z"></path></svg>
+                    </a>
+                    <a href="https://twitter.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter"><path fill="#03A9F4" d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path></svg>
+                    </a>
+                    <a href="https://github.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path></svg>
+                    </a>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+<!-- -------------------------------Hero------------------------------------------->
+    <section id="hero">
+        <div class="container">
+            <div class="row" style="padding-top: 15%">
+                <div class="col-lg-6">
+                    <h1 class="display-1" data-aos="fade-up">Mohammad Anees</h1>
+                    <p data-aos="fade-up" data-aos-delay="300">I'm Developer, Entrepreneur and also a Engineering student</p>
+                    <button class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Explore my work</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </section>
+
+
+    <section class="skills">
+        <div class="container px-4 py-5 border-bottom" id="custom-cards">
+            <h2 class="pb-2 border-bottom" data-aos="fade-up">My Skills</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" data-aos="fade-right" data-aos-delay="300">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="mb-4 display-6 lh-1 fw-bold">Web Developer</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <img src="./images/pro-orange.png" alt="website">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="display-6 lh-1 fw-bold">Tech <br> Enthusiat</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <img src="./images/tech enthu-orange.png" alt="Programming">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" data-aos="fade-left" data-aos-delay="300">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="display-6 lh-1 fw-bold">An <br> Entrepreneur</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <img src="./images/Entrepreneur-orange.png" alt="Bussiness">
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="projects">
+      <div class="px-4 py-5 text-center border-bottom">
+        <img class="d-block mx-auto mb-4 project" src="./images/project-orange.png" alt="Project image" data-aos="fade-up">
+        <h1 class="display-5 fw-bold " style="color: white" data-aos= "fade-up" data-aos-delay="300">Project Gorilla</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 project-para" data-aos="fade-up" data-aos-delay="400">This is our biggest that we are currently working in.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Know more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer class="py-4">
+        <ul class="nav justify-content-center pb-3 mb-2">
+          <li class="nav-item"><a href="https://in.linkedin.com/in/anees17/" class="nav-link px-3" style="color: white" data-aos="fade-up" data-aos-delay="650">Linkedin</a></li>
+          <li class="nav-item"><a href="https://twitter.com" class="nav-link px-3" style="color: white" data-aos="fade-up" data-aos-delay="650">Twitter</a></li>
+          <li class="nav-item"><a href="https://github.com" class="nav-link px-3" style="color: white" data-aos="fade-up" data-aos-delay="650">github</a></li>
+        </ul>
+        <p class="text-center copyright" style="color: white" data-aos="fade-up" data-aos-delay="700">©Anees @Primate Pvt.Ltd</p>
+      </footer>
+    </section>
+</body>
+</html>
